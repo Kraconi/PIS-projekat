@@ -1,0 +1,21 @@
+﻿<Window x:Class="WPFSportskaRadnja.Forme.FrmGarancija"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFSportskaRadnja.Forme"
+        mc:Ignorable="d"
+        Title="Dodaj/izmeni garanciju" Height="300" Width="360">
+    <Grid>
+        <Label Content="Broj garancije" HorizontalAlignment="Left" Margin="20,20,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="txtGarancija" HorizontalAlignment="Left" Height="23" Margin="208,23,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <DatePicker Name="dpDatum" HorizontalAlignment="Left" Margin="208,61,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Datum izdavanja" HorizontalAlignment="Left" Margin="19,59,0,0" VerticalAlignment="Top"/>
+        <Label Content="Trajanje garancije" HorizontalAlignment="Left" Margin="20,100,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="txtTrajanje" HorizontalAlignment="Left" Height="23" Margin="208,102,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Button Name="btnSacuvaj" Content="Sačuvaj" HorizontalAlignment="Left" Margin="20,179,0,0" VerticalAlignment="Top" Width="308" Height="30" Click="btnSacuvaj_Click"  />
+        <Button Name="btnOtkazi" Content="Otkaži" HorizontalAlignment="Left" Margin="20,217,0,0" VerticalAlignment="Top" Width="308" Height="30" Click="btnOtkazi_Click" />
+        <Label Content="Garancija važi za proizvod" HorizontalAlignment="Left" Margin="19,141,0,0" VerticalAlignment="Top"/>
+        <ComboBox Name="cbProizvod" HorizontalAlignment="Left" Margin="208,145,0,0" VerticalAlignment="Top" Width="120" DisplayMemberPath="idProizvoda" SelectedValuePath="idProizvoda"/>
+    </Grid>
+</Window>

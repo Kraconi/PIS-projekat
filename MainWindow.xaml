@@ -1,0 +1,32 @@
+﻿<Window x:Class="WPFSportskaRadnja.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFSportskaRadnja"
+        mc:Ignorable="d"
+        Title="Sportska radnja" Height="450" Width="800">
+    <Grid Background="#FF6B728E">
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Height="49" VerticalAlignment="Bottom" Width="705" Margin="50,0,10,0">
+            <Button x:Name="btnGarancije" Content="Garancije" Width="70" Click="btnGarancije_Click" Background="#FF1C82FF" Foreground="#FFDACCCC" FontWeight="Bold" FontSize="14"/>
+            <Button x:Name="btnKategorije" Content="Kategorije" Width="80" Click="btnKategorije_Click" Background="#FF1C82FF" Foreground="#FFDACCCC" FontSize="14" FontWeight="Bold"/>
+            <Button x:Name="btnKorisnici" Content="Korisnici" Width="74" Click="btnKorisnici_Click" Background="#FF1C82FF" Foreground="#FFDACCCC" FontSize="14" FontWeight="Bold"/>
+            <Button x:Name="btnKupci" Content="Kupci" Width="70" Click="btnKupci_Click" Background="#FF1C82FF" Foreground="#FFDACCCC" FontSize="14" FontWeight="Bold"/>
+            <Button x:Name="btnMarke" Content="Marke" Width="70" Click="btnMarke_Click" Background="#FF1C82FF" Foreground="#FFDACCCC" FontSize="14" FontWeight="Bold"/>
+            <Button x:Name="btnPorudžbine" Content="Porudžbine" Width="100" Click="btnPorudžbine_Click" Background="#FF1C82FF" Foreground="#FFDACCCC" FontSize="14" FontWeight="Bold"/>
+            <Button x:Name="btnProizvodi" Content="Proizvodi" Width="70" Click="btnProizvodi_Click" Background="#FF1C82FF" Foreground="#FFDACCCC" FontWeight="Bold"/>
+            <Button x:Name="btnStavkePorudžbine" Content="Stavke &#xD;&#xA;porudžbine" Width="105" Click="btnStavkePorudžbine_Click" Background="#FF1C82FF" Foreground="#FFDACCCC" FontWeight="Bold"/>
+            <Button x:Name="btnVrste" Content="Vrste" Width="70" Click="btnVrste_Click" Background="#FF1C82FF" Foreground="#FFDACCCC" FontWeight="Bold"/>
+        </StackPanel>
+        <DataGrid Name="DataGridCentralni" IsReadOnly="true" SelectionUnit="FullRow" SelectionMode="Single" HorizontalAlignment="Center" 
+                  Height="Auto" VerticalAlignment="Center" Width="Auto"/>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center"  Height="53" VerticalAlignment="Top" Width="297" Background="#FFF9F8F8" Margin="391,0,105.6,367">
+            <Button x:Name="btnDodaj" Content="Dodaj" Width="100" Click="btnDodaj_Click" Background="#FF1C82AD" Foreground="#FF151212" FontWeight="Bold" FontSize="20"/>
+            <Button x:Name="btnIzmeni" Content="Izmeni" Width="100" Click="btnIzmeni_Click" Background="#FF1C82AD" Foreground="#FF151212" FontWeight="Bold" FontSize="20"/>
+            <Button x:Name="btnBrisanje" Content="Obirši" Width="100" Click="btnBrisanje_Click" Background="#FF1C82AD" Foreground="#FF151212" FontWeight="Bold" FontSize="20"/>
+        </StackPanel>
+        <Ellipse Fill="#FF13005A" HorizontalAlignment="Left" Height="130" Margin="4,10,0,0" Stroke="#FFCDCDCD" VerticalAlignment="Top" Width="242"/>
+        <Label Content="Sportska&#xD;&#xA;  radnja" HorizontalAlignment="Left" Margin="43,23,0,294" VerticalAlignment="Center" Foreground="#FFEBEBEB" FontSize="40" FontWeight="Bold" Width="176" Background="{x:Null}" FontFamily="Times New Roman"/>
+
+    </Grid>
+</Window>

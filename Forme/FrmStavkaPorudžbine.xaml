@@ -1,0 +1,19 @@
+﻿<Window x:Class="WPFSportskaRadnja.Forme.FrmStavkaPorudžbine"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFSportskaRadnja.Forme"
+        mc:Ignorable="d"
+        Title="Dodaj/izmeni porudzbinu" Height="300" Width="310">
+    <Grid>
+        <TextBox Name="txtKolicina" HorizontalAlignment="Left" Height="20" Margin="20,46,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Količina:" HorizontalAlignment="Left" Margin="20,20,0,0" VerticalAlignment="Top" HorizontalContentAlignment="Left" />
+        <ComboBox Name="cbProizvod" HorizontalAlignment="Left" Margin="20,108,0,0" VerticalAlignment="Top" Width="120" DisplayMemberPath="idProizvoda" SelectedValuePath="idProizvoda"/>
+        <Label Content="Proizvod:" HorizontalAlignment="Left" Margin="20,82,0,0" VerticalAlignment="Top" />
+        <ComboBox Name="cbPorudžbine" HorizontalAlignment="Left" Margin="159,108,0,0" VerticalAlignment="Top" Width="120" DisplayMemberPath="brojPorudžbine" SelectedValuePath="idPorudžbine"/>
+        <Label Content="Porudžbina:" HorizontalAlignment="Left" Margin="159,82,0,0" VerticalAlignment="Top" />
+        <Button Name="btnOtkazi" Content="Otkaži" HorizontalAlignment="Left" Margin="20,219,0,0" VerticalAlignment="Top" Width="259" Height="30" Click="btnOtkazi_Click"  />
+        <Button Name="btnSacuvaj" Content="Sačuvaj" HorizontalAlignment="Left" Margin="20,172,0,0" VerticalAlignment="Top" Width="259" Height="30" Click="btnSacuvaj_Click"  />
+    </Grid>
+</Window>
